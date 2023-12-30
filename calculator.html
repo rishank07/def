@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .title {
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #008080;
+      }
+
+      .container {
+        height: 50vh;
+        width: 40vh;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        background-color: #fffffe;
+        font-size: 2rem;
+        text-align: center;
+        gap: 3%;
+        padding: 3%;
+      }
+
+      .container div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bolder;
+        border-radius: 5px;
+      }
+
+      .container div:nth-child(1) {
+        grid-column: span 4;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        background-color: #fffffe;
+      }
+
+      .container div:nth-child(5),
+      .container div:nth-child(9),
+      .container div:nth-child(13),
+      .container div:nth-child(17),
+      .container div:nth-child(16) {
+        background-color: black;
+        color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .container div:nth-child(14) {
+        background-color: red;
+        color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .container div:nth-child(2),
+      .container div:nth-child(3),
+      .container div:nth-child(4),
+      .container div:nth-child(6),
+      .container div:nth-child(7),
+      .container div:nth-child(8),
+      .container div:nth-child(10),
+      .container div:nth-child(11),
+      .container div:nth-child(12),
+      .container div:nth-child(15) {
+        background-color: white;
+        border: 1px solid #ccc;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="title">
+      <p>Masai Calculator</p>
+    </div>
+    <div class="container">
+      <!-- Your content goes here -->
+      <div></div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>+</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>-</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>x</div>
+      <div>c</div>
+      <div>0</div>
+      <div>=</div>
+      <div>/</div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>
